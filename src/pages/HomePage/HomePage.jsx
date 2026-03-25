@@ -1,5 +1,11 @@
-// HomePage.jsx
+import Hero from "../../components/Hero/Hero";
+
 function HomePage() {
-  return <div className="container">Главная страница</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
+
 export default HomePage;
