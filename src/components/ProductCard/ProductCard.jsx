@@ -3,7 +3,11 @@ import ProductsContext from "../../context";
 import "./ProductCard.css";
 
 function ProductCard({ product }) {
-  const { addToCart } = useContext(ProductsContext);
+  const { addToCart, cartData } = useContext(ProductsContext);
+
+  const isInCart = cartData.some(
+    (item) => item.productId === product.id
+  );
 
   const handleAddToCart = () => {
     addToCart(product);
@@ -26,11 +30,13 @@ function ProductCard({ product }) {
         </div>
 
         <button
-          className="product-card__button"
+          className={`product-card__button ${
+            isInCart ? "product-card__button--active" : ""
+          }`}
           onClick={handleAddToCart}
           type="button"
         >
-          +
+          {isInCart ? "✓" : "+"}
         </button>
       </div>
     </article>

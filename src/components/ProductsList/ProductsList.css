@@ -1,7 +1,7 @@
 .products-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 84px;
+  gap: 40px 80px;
 }
 
 .products-list__status {

@@ -54,15 +54,11 @@ function CartPage() {
           <h2 className="cart-summary__title">Итого</h2>
 
           <div className="cart-summary__products">
-            {cartData.length === 0 ? (
-              <p className="cart-summary__empty">Нет товаров</p>
-            ) : (
-              cartData.map((item) => (
-                <p key={item.id} className="cart-summary__name">
-                  {item.name}
-                </p>
-              ))
-            )}
+            {cartData.map((item) => (
+              <p key={item.id} className="cart-summary__name">
+                {item.name}
+              </p>
+            ))}
           </div>
 
           <div className="cart-summary__bottom">

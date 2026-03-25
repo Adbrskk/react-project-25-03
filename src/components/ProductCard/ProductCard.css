@@ -9,6 +9,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .product-card__image {
@@ -55,5 +61,17 @@
   background-color: #ffffff;
   cursor: pointer;
   font-size: 20px;
-  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.product-card__button:hover {
+  background-color: #111111;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.product-card__button--active {
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
 }

@@ -28,6 +28,15 @@ function ProductProvider({ children }) {
 
   const addToCart = async (product) => {
     try {
+      const isAlreadyInCart = cartData.some(
+        (item) => item.productId === product.id
+      );
+
+      if (isAlreadyInCart) {
+        alert("Товар уже в корзине");
+        return;
+      }
+
       const cartItem = {
         productId: product.id,
         image: product.image,
