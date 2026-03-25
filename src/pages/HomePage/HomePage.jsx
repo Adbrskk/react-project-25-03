@@ -1,31 +1,16 @@
 import Hero from "../../components/Hero/Hero";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import ProductsList from "../../components/ProductsList/ProductsList";
+import "./HomePage.css";
 
 function HomePage() {
   return (
-    <div>
+    <div className="home-page">
       <Hero />
 
-      <section className="container" style={{ marginTop: "60px" }}>
-        <h2 style={{ fontSize: "40px", marginBottom: "40px" }}>Товары</h2>
-
-        <div style={{ display: "flex", gap: "40px" }}>
-          <ProductCard
-            image="https://i.imgur.com/PReV51j.png"
-            name="Мужские Кроссовки Nike Air Zoom Pegasus"
-            price="180"
-          />
-          <ProductCard
-            image="https://i.imgur.com/PReV51j.png"
-            name="Мужские Кроссовки Nike Air Zoom Pegasus"
-            price="180"
-          />
-          <ProductCard
-            image="https://i.imgur.com/PReV51j.png"
-            name="Мужские Кроссовки Nike Air Zoom Pegasus"
-            price="180"
-          />
-        </div>
+      <section className="products-section container">
+        <h2 className="products-section__title">Товары</h2>
+        <div className="products-section__line"></div>
+        <ProductsList />
       </section>
     </div>
   );

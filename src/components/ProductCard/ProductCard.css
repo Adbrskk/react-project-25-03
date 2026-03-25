@@ -1,11 +1,11 @@
 .product-card {
   width: 100%;
   max-width: 260px;
-  min-height: 260px;
+  min-height: 320px;
   background-color: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 32px;
-  padding: 22px 26px 24px;
+  padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,7 +14,7 @@
 .product-card__image {
   width: 100%;
   max-width: 180px;
-  height: 95px;
+  height: 110px;
   object-fit: contain;
   display: block;
   margin: 0 auto 20px;
