@@ -1,0 +1,17 @@
+.products-section {
+  margin-top: 60px;
+}
+
+.products-section__title {
+  margin: 0 0 24px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.products-section__line {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin-bottom: 40px;
+}
